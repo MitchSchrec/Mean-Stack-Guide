@@ -1,6 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
   MatButtonModule,
@@ -18,13 +18,17 @@ import {HeaderComponent} from './header/header.component';
 import {PostListComponent} from './posts/post-list/post-list.component';
 import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
+import { SignupComponent } from './auth/signup/signup.component';
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostCreateComponent,
     HeaderComponent,
-    PostListComponent
+    PostListComponent,
+    SignupComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,8 @@ import {AppRoutingModule} from './app-routing.module';
     MatExpansionModule,
     MatProgressSpinnerModule,
     HttpClientModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
