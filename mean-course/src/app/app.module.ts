@@ -6,7 +6,7 @@ import {
   MatButtonModule,
   MatCardModule,
   MatExpansionModule,
-  MatInputModule,
+  MatInputModule, MatPaginatorModule,
   MatProgressSpinnerModule,
   MatToolbarModule
 } from '@angular/material';
@@ -37,9 +37,11 @@ import {AppRoutingModule} from './app-routing.module';
     MatToolbarModule,
     MatExpansionModule,
     MatProgressSpinnerModule,
-    HttpClientModule
+    HttpClientModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
